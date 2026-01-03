@@ -4,6 +4,8 @@ import AuthLayout from "./layouts/AuthLayout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard.tsx";
+import ProtectedRoute from "./routes/ProductedRoute.tsx";
 
 function App() {
     return (
@@ -17,6 +19,11 @@ function App() {
             <Route element={<AuthLayout />}>
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
+            </Route>
+            <Route element={<ProtectedRoute />}>
+                <Route element={<AuthLayout />}>
+                    <Route path="/dashboard" element={<Dashboard />} />
+                </Route>
             </Route>
         </Routes>
     );

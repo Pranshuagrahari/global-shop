@@ -19,7 +19,7 @@ const Login = () => {
             console.log("Logged in user:", profile);
 
             // Redirect after login
-            navigate("/");
+            navigate("/dashboard");
         } catch (error: any) {
             console.error("Login failed:", error.message);
             alert(error.message);

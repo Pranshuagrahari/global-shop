@@ -40,7 +40,7 @@ const Signup = () => {
             });
 
             console.log("Signup successful");
-            navigate("/");
+            navigate("/dashboard");
         } catch (err: any) {
             alert(err.message);
         }
