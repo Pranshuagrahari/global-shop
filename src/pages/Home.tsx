@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const Home = () => {
     return (
         <div className="min-h-screen bg-white">
@@ -37,9 +39,9 @@ const Home = () => {
                         <button className="px-8 py-4 text-lg font-medium text-white bg-black rounded hover:bg-gray-800 transition-colors">
                             Start selling today →
                         </button>
-                        <button className="px-8 py-4 text-lg font-medium text-black border-2 border-black rounded hover:bg-gray-50 transition-colors">
+                        <Link to="/dashboard" className="px-8 py-4 text-lg font-medium text-black border-2 border-black rounded hover:bg-gray-50 transition-colors">
                             View demo
-                        </button>
+                        </Link>
                     </div>
                 </div>
 

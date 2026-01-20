@@ -6,6 +6,9 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard.tsx";
 import ProtectedRoute from "./routes/ProductedRoute.tsx";
+import AddProduct from "./pages/AddProduct.tsx";
+import AllProduct from "./pages/AllProduct.tsx";
+import QrCodes from "./pages/QrCode.tsx";
 
 function App() {
     return (
@@ -23,6 +26,9 @@ function App() {
             <Route element={<ProtectedRoute />}>
                 <Route element={<AuthLayout />}>
                     <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/addproduct" element={<AddProduct/>} />
+                    <Route path="/allproduct" element={<AllProduct/>} />
+                    <Route path="/qrcodes" element={<QrCodes/>} />
                 </Route>
             </Route>
         </Routes>
