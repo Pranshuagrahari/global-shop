@@ -1,7 +1,7 @@
-import {useEffect, useState} from "react";
-import {fetchAllProducts} from "../../firebase/product.service.ts";
-import type {Timestamp} from "firebase/firestore";
-import { auth } from "../../firebase/firebase.ts";
+import { useEffect, useState } from "react";
+import { fetchAllProducts } from "../../services/firebase/product.service";
+import type { Timestamp } from "firebase/firestore";
+import { auth } from "../../services/firebase/firebase";
 
 interface Product {
     id: string;
@@ -16,7 +16,7 @@ interface Product {
 }
 
 const AllProductPage = () => {
-    const [product,setProducts] = useState<Product[]>([])
+    const [product, setProducts] = useState<Product[]>([])
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("all");
     const [selectedStatus, setSelectedStatus] = useState("all");
@@ -32,7 +32,7 @@ const AllProductPage = () => {
                 }
 
                 const myProducts = response.filter(
-                    (product) => product.sellerId === auth.currentUser!.uid
+                    (product: Product) => product.sellerId === auth.currentUser!.uid
                 );
 
                 setProducts(myProducts);
@@ -180,11 +180,11 @@ const AllProductPage = () => {
                                     alt={product.name}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
-                  {/*              <div className="absolute top-3 right-3">*/}
-                  {/*<span className={`px-3 py-1 rounded-full text-xs font-medium border ${getStatusColor(product.status[0])}`}>*/}
-                  {/*  {getStatusText(product.status[0])}*/}
-                  {/*</span>*/}
-                  {/*              </div>*/}
+                                {/*              <div className="absolute top-3 right-3">*/}
+                                {/*<span className={`px-3 py-1 rounded-full text-xs font-medium border ${getStatusColor(product.status[0])}`}>*/}
+                                {/*  {getStatusText(product.status[0])}*/}
+                                {/*</span>*/}
+                                {/*              </div>*/}
                             </div>
 
                             {/* Product Info */}

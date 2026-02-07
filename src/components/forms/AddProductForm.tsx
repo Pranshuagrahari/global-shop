@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { collection, addDoc, Timestamp } from "firebase/firestore";
-import { auth, db } from "../../firebase/firebase.ts";
+import { auth } from "../../services/firebase/firebase";
+import { addProduct } from "../../services/firebase/product.service";
 
 interface ProductForm {
     name: string;
@@ -37,7 +37,7 @@ const AddProductForm = () => {
         setLoading(true);
 
         try {
-            await addDoc(collection(db, "products"), {
+            await addProduct({
                 sellerId: auth.currentUser.uid,
                 name: form.name,
                 price: Number(form.price),
@@ -45,7 +45,6 @@ const AddProductForm = () => {
                 category: form.category,
                 description: form.description,
                 imageUrl: form.image,
-                createdAt: Timestamp.now(),
             });
 
             alert("Product added successfully 🚀");
@@ -59,7 +58,7 @@ const AddProductForm = () => {
                 image: "",
             });
         } catch (error) {
-            console.error("Firestore error:", error);
+            console.error("Error adding product:", error);
             alert("Failed to add product");
         } finally {
             setLoading(false);
@@ -224,7 +223,7 @@ const AddProductForm = () => {
                                         </svg>
                                     </button>
                                 </div>
-                            ): (
+                            ) : (
                                 <label className="flex flex-col items-center justify-center w-full h-64 border-2 border-dashed border-gray-700 rounded-lg cursor-pointer bg-black hover:bg-gray-900 transition-colors">
                                     <div className="flex flex-col items-center justify-center pt-5 pb-6">
                                         <svg className="w-12 h-12 mb-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -256,12 +255,12 @@ const AddProductForm = () => {
                         >
                             {loading ? (
                                 <span className="flex items-center justify-center">
-                  <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                  </svg>
-                  Adding Product...
-                </span>
+                                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+                                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                    </svg>
+                                    Adding Product...
+                                </span>
                             ) : (
                                 "Add Product"
                             )}

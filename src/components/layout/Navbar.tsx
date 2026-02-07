@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from "../../context/AuthContext.tsx";
-import { logoutUser } from "../../firebase/auth.service";
+import { useAuth } from "../../features/auth/AuthContext";
+import { logoutUser } from "../../services/firebase/auth.service";
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -9,8 +9,8 @@ const Navbar: React.FC = () => {
     const { user, profile } = useAuth();
 
     const getInitial = () => {
-        if (profile?.name) {
-            return profile.name.charAt(0).toUpperCase();
+        if (profile?.displayName) {
+            return profile.displayName.charAt(0).toUpperCase();
         }
         return "?";
     };
@@ -25,8 +25,8 @@ const Navbar: React.FC = () => {
                             G
                         </div>
                         <span className="text-xl font-bold text-gray-900">
-              Global<span className="text-indigo-600">Shop</span>
-            </span>
+                            Global<span className="text-indigo-600">Shop</span>
+                        </span>
                     </div>
 
                     {/* Auth Section */}
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
                                     <div className="absolute right-0 mt-3 w-60 rounded-xl bg-white shadow-xl border overflow-hidden animate-fade-in">
                                         <div className="px-4 py-3">
                                             <p className="text-sm font-semibold text-gray-800">
-                                                {profile?.name}
+                                                {profile?.displayName}
                                             </p>
                                             <p className="text-xs text-gray-500">
                                                 {profile?.email}

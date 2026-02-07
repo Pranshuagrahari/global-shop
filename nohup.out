@@ -1,0 +1,356 @@
+nohup: ignoring input
+your url is: https://plenty-cougars-guess.loca.lt
+Terminated
+
+> global-shop@0.0.0 dev
+> vite --host
+
+Port 5173 is in use, trying another one...
+Port 5174 is in use, trying another one...
+Port 5175 is in use, trying another one...
+
+  VITE v7.3.0  ready in 213 ms
+
+  ➜  Local:   http://localhost:5176/
+  ➜  Network: http://192.168.29.125:5176/
+Killed
+
+> global-shop@0.0.0 dev
+> vite --host
+
+
+  VITE v7.3.0  ready in 187 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://192.168.29.125:5173/
+12:38:46 AM [vite] vite.config.ts changed, restarting server...
+12:38:47 AM [vite] server restarted.
+Killed
+
+> global-shop@0.0.0 dev
+> vite --host
+
+
+  VITE v7.3.0  ready in 217 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://192.168.29.125:5173/
+12:45:14 AM [vite] (client) hmr update /src/components/Scanner.tsx, /src/index.css
+12:45:15 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
+12:48:35 AM [vite] (client) Pre-transform error: /home/pranshu/global-shop/src/components/Scanner.tsx: Support for the experimental syntax 'decorators' isn't currently enabled (205:1):
+
+  203 |             
+  204 |             <style>{`
+> 205 | @keyframes scan {
+      | ^
+  206 |     0 % { top: 10 %; opacity: 0; }
+  207 |     50 % { opacity: 1; }
+  208 |     100 % { top: 90 %; opacity: 0; }
+
+Add @babel/plugin-proposal-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-proposal-decorators) to the 'plugins' section of your Babel config to enable transformation.
+If you want to leave it as-is, add @babel/plugin-syntax-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-decorators) to the 'plugins' section to enable parsing.
+
+If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+	npx cross-env BABEL_SHOW_CONFIG_FOR=/home/pranshu/global-shop/src/components/Scanner.tsx <your build command>
+See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+  Plugin: vite:react-babel
+  File: /home/pranshu/global-shop/src/components/Scanner.tsx:205:0
+  203 |              
+  204 |              <style>{`
+  205 |  @keyframes scan {
+      |  ^
+  206 |      0 % { top: 10 %; opacity: 0; }
+  207 |      50 % { opacity: 1; }
+12:48:36 AM [vite] Internal server error: /home/pranshu/global-shop/src/components/Scanner.tsx: Support for the experimental syntax 'decorators' isn't currently enabled (205:1):
+
+  203 |             
+  204 |             <style>{`
+> 205 | @keyframes scan {
+      | ^
+  206 |     0 % { top: 10 %; opacity: 0; }
+  207 |     50 % { opacity: 1; }
+  208 |     100 % { top: 90 %; opacity: 0; }
+
+Add @babel/plugin-proposal-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-proposal-decorators) to the 'plugins' section of your Babel config to enable transformation.
+If you want to leave it as-is, add @babel/plugin-syntax-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-decorators) to the 'plugins' section to enable parsing.
+
+If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+	npx cross-env BABEL_SHOW_CONFIG_FOR=/home/pranshu/global-shop/src/components/Scanner.tsx <your build command>
+See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+  Plugin: vite:react-babel
+  File: /home/pranshu/global-shop/src/components/Scanner.tsx:205:0
+  203 |              
+  204 |              <style>{`
+  205 |  @keyframes scan {
+      |  ^
+  206 |      0 % { top: 10 %; opacity: 0; }
+  207 |      50 % { opacity: 1; }
+      at constructor (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.expectOnePlugin (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:6658:18)
+      at TypeScriptParserMixin.parseDecorator (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13024:10)
+      at TypeScriptParserMixin.parseDecorators (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13009:28)
+      at TypeScriptParserMixin.parseStatementLike (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12841:25)
+      at TypeScriptParserMixin.parseModuleItem (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:14568:25)
+      at TypeScriptParserMixin.parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:10183:18)
+      at parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:14602:38)
+      at parser (/home/pranshu/global-shop/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/pranshu/global-shop/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/pranshu/global-shop/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/pranshu/global-shop/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/pranshu/global-shop/node_modules/gensync/index.js:261:32)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/pranshu/global-shop/node_modules/gensync/index.js:223:11)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:189:28
+      at /home/pranshu/global-shop/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:113:33
+      at step (/home/pranshu/global-shop/node_modules/gensync/index.js:287:14)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/pranshu/global-shop/node_modules/gensync/index.js:223:11)
+12:48:59 AM [vite] Internal server error: /home/pranshu/global-shop/src/components/Scanner.tsx: Support for the experimental syntax 'decorators' isn't currently enabled (205:1):
+
+  203 |             
+  204 |             <style>{`
+> 205 | @keyframes scan {
+      | ^
+  206 |     0 % { top: 10 %; opacity: 0; }
+  207 |     50 % { opacity: 1; }
+  208 |     100 % { top: 90 %; opacity: 0; }
+
+Add @babel/plugin-proposal-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-proposal-decorators) to the 'plugins' section of your Babel config to enable transformation.
+If you want to leave it as-is, add @babel/plugin-syntax-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-decorators) to the 'plugins' section to enable parsing.
+
+If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+	npx cross-env BABEL_SHOW_CONFIG_FOR=/home/pranshu/global-shop/src/components/Scanner.tsx <your build command>
+See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+  Plugin: vite:react-babel
+  File: /home/pranshu/global-shop/src/components/Scanner.tsx:205:0
+  203 |              
+  204 |              <style>{`
+  205 |  @keyframes scan {
+      |  ^
+  206 |      0 % { top: 10 %; opacity: 0; }
+  207 |      50 % { opacity: 1; }
+      at constructor (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.expectOnePlugin (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:6658:18)
+      at TypeScriptParserMixin.parseDecorator (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13024:10)
+      at TypeScriptParserMixin.parseDecorators (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13009:28)
+      at TypeScriptParserMixin.parseStatementLike (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12841:25)
+      at TypeScriptParserMixin.parseModuleItem (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:14568:25)
+      at TypeScriptParserMixin.parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:10183:18)
+      at parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:14602:38)
+      at parser (/home/pranshu/global-shop/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/pranshu/global-shop/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/pranshu/global-shop/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/pranshu/global-shop/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/pranshu/global-shop/node_modules/gensync/index.js:261:32)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/pranshu/global-shop/node_modules/gensync/index.js:223:11)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:189:28
+      at /home/pranshu/global-shop/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:113:33
+      at step (/home/pranshu/global-shop/node_modules/gensync/index.js:287:14)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/pranshu/global-shop/node_modules/gensync/index.js:223:11)
+12:49:18 AM [vite] Internal server error: /home/pranshu/global-shop/src/components/Scanner.tsx: Support for the experimental syntax 'decorators' isn't currently enabled (205:1):
+
+  203 |             
+  204 |             <style>{`
+> 205 | @keyframes scan {
+      | ^
+  206 |     0 % { top: 10 %; opacity: 0; }
+  207 |     50 % { opacity: 1; }
+  208 |     100 % { top: 90 %; opacity: 0; }
+
+Add @babel/plugin-proposal-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-proposal-decorators) to the 'plugins' section of your Babel config to enable transformation.
+If you want to leave it as-is, add @babel/plugin-syntax-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-decorators) to the 'plugins' section to enable parsing.
+
+If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+	npx cross-env BABEL_SHOW_CONFIG_FOR=/home/pranshu/global-shop/src/components/Scanner.tsx <your build command>
+See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+  Plugin: vite:react-babel
+  File: /home/pranshu/global-shop/src/components/Scanner.tsx:205:0
+  203 |              
+  204 |              <style>{`
+  205 |  @keyframes scan {
+      |  ^
+  206 |      0 % { top: 10 %; opacity: 0; }
+  207 |      50 % { opacity: 1; }
+      at constructor (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.expectOnePlugin (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:6658:18)
+      at TypeScriptParserMixin.parseDecorator (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13024:10)
+      at TypeScriptParserMixin.parseDecorators (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13009:28)
+      at TypeScriptParserMixin.parseStatementLike (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12841:25)
+      at TypeScriptParserMixin.parseModuleItem (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:14568:25)
+      at TypeScriptParserMixin.parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:10183:18)
+      at parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:14602:38)
+      at parser (/home/pranshu/global-shop/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/pranshu/global-shop/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/pranshu/global-shop/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/pranshu/global-shop/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/pranshu/global-shop/node_modules/gensync/index.js:261:32)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/pranshu/global-shop/node_modules/gensync/index.js:223:11)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:189:28
+      at /home/pranshu/global-shop/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:113:33
+      at step (/home/pranshu/global-shop/node_modules/gensync/index.js:287:14)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/pranshu/global-shop/node_modules/gensync/index.js:223:11)
+12:49:48 AM [vite] Internal server error: /home/pranshu/global-shop/src/components/Scanner.tsx: Support for the experimental syntax 'decorators' isn't currently enabled (205:1):
+
+  203 |             
+  204 |             <style>{`
+> 205 | @keyframes scan {
+      | ^
+  206 |     0 % { top: 10 %; opacity: 0; }
+  207 |     50 % { opacity: 1; }
+  208 |     100 % { top: 90 %; opacity: 0; }
+
+Add @babel/plugin-proposal-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-proposal-decorators) to the 'plugins' section of your Babel config to enable transformation.
+If you want to leave it as-is, add @babel/plugin-syntax-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-decorators) to the 'plugins' section to enable parsing.
+
+If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+	npx cross-env BABEL_SHOW_CONFIG_FOR=/home/pranshu/global-shop/src/components/Scanner.tsx <your build command>
+See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+  Plugin: vite:react-babel
+  File: /home/pranshu/global-shop/src/components/Scanner.tsx:205:0
+  203 |              
+  204 |              <style>{`
+  205 |  @keyframes scan {
+      |  ^
+  206 |      0 % { top: 10 %; opacity: 0; }
+  207 |      50 % { opacity: 1; }
+      at constructor (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.expectOnePlugin (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:6658:18)
+      at TypeScriptParserMixin.parseDecorator (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13024:10)
+      at TypeScriptParserMixin.parseDecorators (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13009:28)
+      at TypeScriptParserMixin.parseStatementLike (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12841:25)
+      at TypeScriptParserMixin.parseModuleItem (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:14568:25)
+      at TypeScriptParserMixin.parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:10183:18)
+      at parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:14602:38)
+      at parser (/home/pranshu/global-shop/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/pranshu/global-shop/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/pranshu/global-shop/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/pranshu/global-shop/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/pranshu/global-shop/node_modules/gensync/index.js:261:32)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/pranshu/global-shop/node_modules/gensync/index.js:223:11)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:189:28
+      at /home/pranshu/global-shop/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:113:33
+      at step (/home/pranshu/global-shop/node_modules/gensync/index.js:287:14)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/pranshu/global-shop/node_modules/gensync/index.js:223:11)
+12:50:34 AM [vite] (client) hmr update /src/index.css
+12:50:35 AM [vite] Internal server error: /home/pranshu/global-shop/src/components/Scanner.tsx: Support for the experimental syntax 'decorators' isn't currently enabled (205:1):
+
+  203 |             
+  204 |             <style>{`
+> 205 | @keyframes scan {
+      | ^
+  206 |     0 % { top: 10 %; opacity: 0; }
+  207 |     50 % { opacity: 1; }
+  208 |     100 % { top: 90 %; opacity: 0; }
+
+Add @babel/plugin-proposal-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-proposal-decorators) to the 'plugins' section of your Babel config to enable transformation.
+If you want to leave it as-is, add @babel/plugin-syntax-decorators (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-decorators) to the 'plugins' section to enable parsing.
+
+If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+	npx cross-env BABEL_SHOW_CONFIG_FOR=/home/pranshu/global-shop/src/components/Scanner.tsx <your build command>
+See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+  Plugin: vite:react-babel
+  File: /home/pranshu/global-shop/src/components/Scanner.tsx:205:0
+  203 |              
+  204 |              <style>{`
+  205 |  @keyframes scan {
+      |  ^
+  206 |      0 % { top: 10 %; opacity: 0; }
+  207 |      50 % { opacity: 1; }
+      at constructor (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.expectOnePlugin (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:6658:18)
+      at TypeScriptParserMixin.parseDecorator (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13024:10)
+      at TypeScriptParserMixin.parseDecorators (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13009:28)
+      at TypeScriptParserMixin.parseStatementLike (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12841:25)
+      at TypeScriptParserMixin.parseModuleItem (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:14568:25)
+      at TypeScriptParserMixin.parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:10183:18)
+      at parse (/home/pranshu/global-shop/node_modules/@babel/parser/lib/index.js:14602:38)
+      at parser (/home/pranshu/global-shop/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/pranshu/global-shop/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/pranshu/global-shop/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/home/pranshu/global-shop/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/home/pranshu/global-shop/node_modules/gensync/index.js:261:32)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/pranshu/global-shop/node_modules/gensync/index.js:223:11)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:189:28
+      at /home/pranshu/global-shop/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:113:33
+      at step (/home/pranshu/global-shop/node_modules/gensync/index.js:287:14)
+      at /home/pranshu/global-shop/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/pranshu/global-shop/node_modules/gensync/index.js:223:11)
+12:50:47 AM [vite] (client) hmr update /src/components/Scanner.tsx, /src/index.css
+12:50:56 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
+12:51:14 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
+12:51:15 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
+12:51:48 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
