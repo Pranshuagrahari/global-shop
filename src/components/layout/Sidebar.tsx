@@ -5,7 +5,7 @@ import type { UserRole } from "../../shared/types";
 
 interface SidebarProps {
     sidebarOpen: boolean;
-    setSidebarOpen?: (open: boolean) => void;
+    setSidebarOpen: (open: boolean) => void;
 }
 
 interface NavItem {
@@ -154,7 +154,7 @@ const NAV_ITEMS: NavItem[] = [
     }
 ];
 
-const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen }) => {
+const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
     const { profile, loading } = useAuth();
     const location = useLocation();
 
@@ -204,9 +204,10 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen }) => {
                             <Link
                                 key={item.path + item.label}
                                 to={item.path}
-                                className={`flex items-center space-x-3 px-3 py-3 rounded-xl transition-all duration-200 group ${isActive
+                                onClick={() => setSidebarOpen(false)}
+                                className={`flex items-center px-4 py-3 text-sm font-medium rounded-lg transition-colors group relative ${isActive
                                     ? "bg-indigo-600/10 text-indigo-400"
-                                    : "text-gray-400 hover:bg-gray-800/50 hover:text-gray-200"
+                                    : "text-gray-400 hover:bg-gray-800 hover:text-white"
                                     }`}
                             >
                                 <div className={`${isActive ? "text-indigo-500" : "text-gray-500 group-hover:text-gray-300"}`}>

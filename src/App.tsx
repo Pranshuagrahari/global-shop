@@ -1,6 +1,5 @@
 
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
-import MainLayout from "./shared/layouts/MainLayout";
 import AuthLayout from "./features/auth/layouts/AuthLayout";
 import Home from "./pages/Home";
 import Login from "./features/auth/pages/Login";
@@ -24,6 +23,8 @@ import UserLayout from "./features/user/layouts/UserLayout.tsx";
 import DevTools from "./components/DevTools";
 import Scanner from "./components/Scanner.tsx";
 import CheckoutPage from "./features/customer/pages/CheckoutPage.tsx";
+import HistoryPage from "./features/customer/pages/HistoryPage.tsx";
+import ProfilePage from "./features/customer/pages/ProfilePage.tsx";
 import { useAuth } from "./features/auth/AuthContext.tsx";
 import { useEffect } from "react";
 
@@ -35,9 +36,9 @@ function App() {
     // Auto-redirect 'user' role to /scan
     useEffect(() => {
         if (!loading && user && profile?.role === 'user') {
-            // If they are on the root or dashboard, send them to scan
+            // If they are on the root or dashboard, send them to history (default user tab)
             if (location.pathname === '/' || location.pathname === '/dashboard') {
-                navigate('/scan');
+                navigate('/history');
             }
         }
     }, [user, profile, loading, location.pathname, navigate]);
@@ -46,9 +47,8 @@ function App() {
         <>
             <Routes>
                 {/* Routes WITH navbar */}
-                <Route element={<MainLayout />}>
-                    <Route path="/" element={<Home />} />
-                </Route>
+                {/* Routes WITH navbar - None for now as Home has its own */}
+                <Route path="/" element={<Home />} />
 
                 {/* Routes WITHOUT navbar */}
                 <Route element={<AuthLayout />}>
@@ -95,8 +95,8 @@ function App() {
                 <Route element={<UserLayout />}>
                     {/* /scan is handled above as standalone full-screen */}
                     <Route path="/pay" element={<PaymentPage />} />
-                    <Route path="/history" element={<div className="p-4 text-center">History Coming Soon</div>} />
-                    <Route path="/profile" element={<div className="p-4 text-center">Profile Coming Soon</div>} />
+                    <Route path="/history" element={<HistoryPage />} />
+                    <Route path="/profile" element={<ProfilePage />} />
                 </Route>
             </Routes>
             <DevTools />

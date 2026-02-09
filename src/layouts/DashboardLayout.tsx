@@ -12,7 +12,7 @@ const DashboardLayout = ({ children, title }: DashboardLayoutProps) => {
 
     return (
         <div className="flex w-full h-screen bg-black text-white">
-            <Sidebar sidebarOpen={sidebarOpen} />
+            <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
             {/* Main Content */}
             <div className="flex-1 flex flex-col overflow-hidden">

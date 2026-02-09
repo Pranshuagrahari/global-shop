@@ -5,13 +5,14 @@ import { SellerService } from "../features/seller/services/seller.service";
 import { useNavigate } from 'react-router-dom';
 
 const Scanner = () => {
-    const [lastScanned, setLastScanned] = useState<string | null>(null);
+    // const [lastScanned, setLastScanned] = useState<string | null>(null); // Removed in favor of ref
     const [scanStatus, setScanStatus] = useState<'idle' | 'scanning' | 'success' | 'error' | 'permission_denied'>('idle');
     const [scannedProductName, setScannedProductName] = useState<string | null>(null);
     const [errorMessage, setErrorMessage] = useState<string | null>(null);
     const { addToCart } = useCart();
     const navigate = useNavigate();
     const scannerRef = useRef<Html5Qrcode | null>(null);
+    const lastScannedRef = useRef<{ text: string, timestamp: number } | null>(null);
 
     useEffect(() => {
         // Cleanup on unmount
@@ -51,8 +52,17 @@ const Scanner = () => {
     };
 
     const onScanSuccess = async (decodedText: string) => {
-        if (decodedText === lastScanned) return;
-        setLastScanned(decodedText);
+        // Debounce: 2 second cooldown
+        const now = Date.now();
+        if (lastScannedRef.current && (now - lastScannedRef.current.timestamp < 2000) && lastScannedRef.current.text === decodedText) {
+            return;
+        }
+
+        console.log("Details Scanned:", decodedText);
+        // setLastScanned(decodedText);
+        lastScannedRef.current = { text: decodedText, timestamp: now };
+
+        // Visual feedback immediately
         setScanStatus('success');
 
         try {
@@ -63,14 +73,15 @@ const Scanner = () => {
 
             try {
                 const url = new URL(decodedText);
-                productId = url.searchParams.get('p');
-                sellerId = url.searchParams.get('s');
+                // Support both short (s, p) and long (sellerId, productId) formats
+                productId = url.searchParams.get('p') || url.searchParams.get('productId');
+                sellerId = url.searchParams.get('s') || url.searchParams.get('sellerId');
             } catch {
                 // Try JSON parsing if URL fails
                 try {
                     const data = JSON.parse(decodedText);
-                    productId = data.p;
-                    sellerId = data.s;
+                    productId = data.p || data.productId;
+                    sellerId = data.s || data.sellerId;
                 } catch {
                     // Fail
                 }
@@ -81,7 +92,7 @@ const Scanner = () => {
                 setScanStatus('error');
                 setTimeout(() => {
                     setScanStatus('scanning');
-                    setLastScanned(null);
+                    // setLastScanned(null);
                 }, 2000);
                 return;
             }
@@ -108,13 +119,13 @@ const Scanner = () => {
                 setTimeout(() => {
                     setScanStatus('scanning');
                     setScannedProductName(null);
-                    setLastScanned(null);
+                    // // setLastScanned(null); // Allow scanning again after animation
                 }, 1500);
             } else {
                 setScanStatus('error');
                 setTimeout(() => {
                     setScanStatus('scanning');
-                    setLastScanned(null);
+                    // setLastScanned(null);
                 }, 2000);
             }
         } catch (err) {
@@ -122,7 +133,7 @@ const Scanner = () => {
             setScanStatus('error');
             setTimeout(() => {
                 setScanStatus('scanning');
-                setLastScanned(null);
+                // // setLastScanned(null);
             }, 2000);
         }
     };

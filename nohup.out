@@ -354,3 +354,591 @@ See https://babeljs.io/docs/configuration#print-effective-configs for more info.
 12:51:14 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
 12:51:15 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
 12:51:48 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
+3:25:52 PM [vite] (client) hmr update /src/components/Scanner.tsx, /src/index.css
+3:26:10 PM [vite] (client) hmr update /src/components/Scanner.tsx, /src/index.css
+3:39:11 PM [vite] (client) hmr update /src/features/customer/pages/CheckoutPage.tsx, /src/index.css
+3:39:11 PM [vite] Internal server error: Failed to resolve import "../../services/firebase/firebase" from "src/features/orders/services/order.service.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:13:30
+  11 |  } from "firebase/firestore";
+  12 |  import { httpsCallable } from "firebase/functions";
+  13 |  import { db, functions } from "../../services/firebase/firebase";
+     |                                 ^
+  14 |  export const OrderService = {
+  15 |    // Create a new order (status: PENDING)
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+3:39:11 PM [vite] (client) Pre-transform error: Failed to resolve import "../../services/firebase/firebase" from "src/features/orders/services/order.service.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:13:30
+  11 |  } from "firebase/firestore";
+  12 |  import { httpsCallable } from "firebase/functions";
+  13 |  import { db, functions } from "../../services/firebase/firebase";
+     |                                 ^
+  14 |  export const OrderService = {
+  15 |    // Create a new order (status: PENDING)
+3:39:11 PM [vite] Internal server error: Failed to resolve import "react-use" from "src/components/PaymentSuccess.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/components/PaymentSuccess.tsx:4:30
+  4  |  import Confetti from "react-confetti";
+  5  |  import { useEffect, useState } from "react";
+  6  |  import { useWindowSize } from "react-use";
+     |                                 ^
+  7  |  const PaymentSuccess = ({ amount, shopName, onComplete }) => {
+  8  |    _s();
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+3:39:11 PM [vite] (client) Pre-transform error: Failed to resolve import "react-use" from "src/components/PaymentSuccess.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/components/PaymentSuccess.tsx:4:30
+  4  |  import Confetti from "react-confetti";
+  5  |  import { useEffect, useState } from "react";
+  6  |  import { useWindowSize } from "react-use";
+     |                                 ^
+  7  |  const PaymentSuccess = ({ amount, shopName, onComplete }) => {
+  8  |    _s();
+3:39:11 PM [vite] (client) ✨ new dependencies optimized: framer-motion, react-confetti
+3:39:11 PM [vite] (client) ✨ optimized dependencies changed. reloading
+3:39:11 PM [vite] Internal server error: Failed to resolve import "react-use" from "src/components/PaymentSuccess.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/components/PaymentSuccess.tsx:4:30
+  4  |  import Confetti from "react-confetti";
+  5  |  import { useEffect, useState } from "react";
+  6  |  import { useWindowSize } from "react-use";
+     |                                 ^
+  7  |  const PaymentSuccess = ({ amount, shopName, onComplete }) => {
+  8  |    _s();
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:24541:20)
+3:39:11 PM [vite] Internal server error: Failed to resolve import "../../services/firebase/firebase" from "src/features/orders/services/order.service.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:13:30
+  11 |  } from "firebase/firestore";
+  12 |  import { httpsCallable } from "firebase/functions";
+  13 |  import { db, functions } from "../../services/firebase/firebase";
+     |                                 ^
+  14 |  export const OrderService = {
+  15 |    // Create a new order (status: PENDING)
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:24541:20)
+3:39:12 PM [vite] (client) Pre-transform error: Failed to resolve import "../../services/firebase/firebase" from "src/features/orders/services/order.service.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:13:30
+  11 |  } from "firebase/firestore";
+  12 |  import { httpsCallable } from "firebase/functions";
+  13 |  import { db, functions } from "../../services/firebase/firebase";
+     |                                 ^
+  14 |  export const OrderService = {
+  15 |    // Create a new order (status: PENDING)
+3:39:12 PM [vite] (client) Pre-transform error: Failed to resolve import "react-use" from "src/components/PaymentSuccess.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/components/PaymentSuccess.tsx:4:30
+  4  |  import Confetti from "react-confetti";
+  5  |  import { useEffect, useState } from "react";
+  6  |  import { useWindowSize } from "react-use";
+     |                                 ^
+  7  |  const PaymentSuccess = ({ amount, shopName, onComplete }) => {
+  8  |    _s();
+3:39:12 PM [vite] Internal server error: Failed to resolve import "react-use" from "src/components/PaymentSuccess.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/components/PaymentSuccess.tsx:4:30
+  4  |  import Confetti from "react-confetti";
+  5  |  import { useEffect, useState } from "react";
+  6  |  import { useWindowSize } from "react-use";
+     |                                 ^
+  7  |  const PaymentSuccess = ({ amount, shopName, onComplete }) => {
+  8  |    _s();
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:24541:20)
+3:39:12 PM [vite] Internal server error: Failed to resolve import "../../services/firebase/firebase" from "src/features/orders/services/order.service.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:13:30
+  11 |  } from "firebase/firestore";
+  12 |  import { httpsCallable } from "firebase/functions";
+  13 |  import { db, functions } from "../../services/firebase/firebase";
+     |                                 ^
+  14 |  export const OrderService = {
+  15 |    // Create a new order (status: PENDING)
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:24541:20)
+3:39:14 PM [vite] Internal server error: Failed to resolve import "react-use" from "src/components/PaymentSuccess.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/components/PaymentSuccess.tsx:4:30
+  4  |  import Confetti from "react-confetti";
+  5  |  import { useEffect, useState } from "react";
+  6  |  import { useWindowSize } from "react-use";
+     |                                 ^
+  7  |  const PaymentSuccess = ({ amount, shopName, onComplete }) => {
+  8  |    _s();
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:24541:20)
+3:39:14 PM [vite] Internal server error: Failed to resolve import "../../services/firebase/firebase" from "src/features/orders/services/order.service.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:13:30
+  11 |  } from "firebase/firestore";
+  12 |  import { httpsCallable } from "firebase/functions";
+  13 |  import { db, functions } from "../../services/firebase/firebase";
+     |                                 ^
+  14 |  export const OrderService = {
+  15 |    // Create a new order (status: PENDING)
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:24541:20)
+3:39:21 PM [vite] (client) hmr update /src/index.css, /src/features/customer/pages/CheckoutPage.tsx
+3:39:21 PM [vite] (client) Pre-transform error: Failed to resolve import "../../services/firebase/firebase" from "src/features/orders/services/order.service.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:13:30
+  11 |  } from "firebase/firestore";
+  12 |  import { httpsCallable } from "firebase/functions";
+  13 |  import { db, functions } from "../../services/firebase/firebase";
+     |                                 ^
+  14 |  export const OrderService = {
+  15 |    // Create a new order (status: PENDING)
+3:39:22 PM [vite] Internal server error: Failed to resolve import "../../services/firebase/firebase" from "src/features/orders/services/order.service.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:13:30
+  11 |  } from "firebase/firestore";
+  12 |  import { httpsCallable } from "firebase/functions";
+  13 |  import { db, functions } from "../../services/firebase/firebase";
+     |                                 ^
+  14 |  export const OrderService = {
+  15 |    // Create a new order (status: PENDING)
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:24541:20)
+3:39:23 PM [vite] Internal server error: Failed to resolve import "../../services/firebase/firebase" from "src/features/orders/services/order.service.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:13:30
+  11 |  } from "firebase/firestore";
+  12 |  import { httpsCallable } from "firebase/functions";
+  13 |  import { db, functions } from "../../services/firebase/firebase";
+     |                                 ^
+  14 |  export const OrderService = {
+  15 |    // Create a new order (status: PENDING)
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:24541:20)
+3:39:26 PM [vite] (client) hmr update /src/index.css, /src/features/customer/pages/CheckoutPage.tsx
+3:39:26 PM [vite] (client) Pre-transform error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:58:0: ERROR: Unterminated string literal
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:58:0
+  
+  Unterminated string literal
+  56 |      }
+  57 |  };
+  58 |  
+     |  ^
+  
+3:39:26 PM [vite] Internal server error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:58:0: ERROR: Unterminated string literal
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:58:0
+  
+  Unterminated string literal
+  56 |      }
+  57 |  };
+  58 |  
+     |  ^
+  
+      at failureErrorWithLog (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:1467:15)
+      at /home/pranshu/global-shop/node_modules/esbuild/lib/main.js:736:50
+      at responseCallbacks.<computed> (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:603:9)
+      at handleIncomingPacket (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:658:12)
+      at Socket.readFromStdout (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+3:39:27 PM [vite] (client) hmr update /src/index.css, /src/features/customer/pages/CheckoutPage.tsx
+3:39:27 PM [vite] (client) Pre-transform error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:58:0: ERROR: Unterminated string literal
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:58:0
+  
+  Unterminated string literal
+  56 |      }
+  57 |  };
+  58 |  
+     |  ^
+  
+3:39:27 PM [vite] Internal server error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:58:0: ERROR: Unterminated string literal
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:58:0
+  
+  Unterminated string literal
+  56 |      }
+  57 |  };
+  58 |  
+     |  ^
+  
+      at failureErrorWithLog (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:1467:15)
+      at /home/pranshu/global-shop/node_modules/esbuild/lib/main.js:736:50
+      at responseCallbacks.<computed> (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:603:9)
+      at handleIncomingPacket (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:658:12)
+      at Socket.readFromStdout (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+3:39:27 PM [vite] Internal server error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:58:0: ERROR: Unterminated string literal
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:58:0
+  
+  Unterminated string literal
+  56 |      }
+  57 |  };
+  58 |  
+     |  ^
+  
+      at failureErrorWithLog (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:1467:15)
+      at /home/pranshu/global-shop/node_modules/esbuild/lib/main.js:736:50
+      at responseCallbacks.<computed> (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:603:9)
+      at handleIncomingPacket (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:658:12)
+      at Socket.readFromStdout (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+3:39:39 PM [vite] (client) hmr update /src/index.css, /src/features/customer/pages/CheckoutPage.tsx
+3:44:21 PM [vite] (client) hmr update /src/index.css, /src/features/customer/pages/CheckoutPage.tsx
+3:49:29 PM [vite] (client) hmr update /src/components/Scanner.tsx, /src/index.css
+3:49:31 PM [vite] (client) hmr update /src/components/Scanner.tsx, /src/index.css
+3:49:34 PM [vite] (client) hmr update /src/features/dashboard/layouts/DashboardLayout.tsx, /src/index.css
+3:49:36 PM [vite] (client) hmr update /src/features/dashboard/layouts/DashboardLayout.tsx, /src/index.css
+3:49:47 PM [vite] (client) hmr update /src/components/layout/Sidebar.tsx, /src/index.css
+3:50:08 PM [vite] (client) hmr update /src/components/layout/Sidebar.tsx, /src/index.css
+3:50:34 PM [vite] (client) hmr update /src/components/layout/Sidebar.tsx, /src/index.css
+3:51:01 PM [vite] (client) hmr update /src/components/layout/Sidebar.tsx, /src/index.css
+3:51:14 PM [vite] (client) hmr update /src/components/layout/Sidebar.tsx, /src/index.css
+3:51:19 PM [vite] (client) hmr update /src/components/Scanner.tsx, /src/index.css
+3:51:33 PM [vite] (client) hmr update /src/components/Scanner.tsx, /src/index.css
+3:51:42 PM [vite] (client) hmr update /src/components/Scanner.tsx, /src/index.css
+3:52:11 PM [vite] (client) hmr update /src/components/layout/Sidebar.tsx, /src/index.css
+3:52:35 PM [vite] (client) hmr update /src/components/layout/Sidebar.tsx, /src/index.css
+3:52:53 PM [vite] (client) hmr update /src/components/layout/Sidebar.tsx, /src/index.css
+3:52:55 PM [vite] (client) hmr update /src/components/Scanner.tsx, /src/index.css
+3:53:02 PM [vite] (client) hmr update /src/components/Scanner.tsx, /src/index.css
+3:57:03 PM [vite] (client) hmr update /src/index.css, /src/features/customer/pages/CheckoutPage.tsx
+3:57:19 PM [vite] (client) hmr update /src/App.tsx, /src/index.css
+3:57:20 PM [vite] (client) hmr update /src/App.tsx, /src/index.css
+3:57:20 PM [vite] Internal server error: Failed to resolve import "date-fns" from "src/features/customer/pages/HistoryPage.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/customer/pages/HistoryPage.tsx:5:23
+  5  |  import { useAuth } from "../../auth/AuthContext";
+  6  |  import { IOrder } from "../../../shared/types";
+  7  |  import { format } from "date-fns";
+     |                          ^
+  8  |  const HistoryPage = () => {
+  9  |    _s();
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+3:57:20 PM [vite] (client) Pre-transform error: Failed to resolve import "date-fns" from "src/features/customer/pages/HistoryPage.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/customer/pages/HistoryPage.tsx:5:23
+  5  |  import { useAuth } from "../../auth/AuthContext";
+  6  |  import { IOrder } from "../../../shared/types";
+  7  |  import { format } from "date-fns";
+     |                          ^
+  8  |  const HistoryPage = () => {
+  9  |    _s();
+3:57:21 PM [vite] Internal server error: Failed to resolve import "date-fns" from "src/features/customer/pages/HistoryPage.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/customer/pages/HistoryPage.tsx:5:23
+  5  |  import { useAuth } from "../../auth/AuthContext";
+  6  |  import { IOrder } from "../../../shared/types";
+  7  |  import { format } from "date-fns";
+     |                          ^
+  8  |  const HistoryPage = () => {
+  9  |    _s();
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:24541:20)
+3:57:21 PM [vite] Internal server error: Failed to resolve import "date-fns" from "src/features/customer/pages/HistoryPage.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/customer/pages/HistoryPage.tsx:5:23
+  5  |  import { useAuth } from "../../auth/AuthContext";
+  6  |  import { IOrder } from "../../../shared/types";
+  7  |  import { format } from "date-fns";
+     |                          ^
+  8  |  const HistoryPage = () => {
+  9  |    _s();
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:24541:20)
+3:57:32 PM [vite] (client) hmr update /src/index.css, /src/features/customer/pages/ProfilePage.tsx
+3:59:34 PM [vite] (client) Pre-transform error: Failed to resolve import "date-fns" from "src/features/customer/pages/HistoryPage.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/customer/pages/HistoryPage.tsx:5:23
+  5  |  import { useAuth } from "../../auth/AuthContext";
+  6  |  import { IOrder } from "../../../shared/types";
+  7  |  import { format } from "date-fns";
+     |                          ^
+  8  |  const HistoryPage = () => {
+  9  |    _s();
+3:59:34 PM [vite] Internal server error: Failed to resolve import "date-fns" from "src/features/customer/pages/HistoryPage.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/pranshu/global-shop/src/features/customer/pages/HistoryPage.tsx:5:23
+  5  |  import { useAuth } from "../../auth/AuthContext";
+  6  |  import { IOrder } from "../../../shared/types";
+  7  |  import { format } from "date-fns";
+     |                          ^
+  8  |  const HistoryPage = () => {
+  9  |    _s();
+      at TransformPluginContext._formatLog (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28998:43)
+      at TransformPluginContext.error (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28995:14)
+      at normalizeUrl (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27118:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27176:32
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:27144:4)
+      at async EnvironmentPluginContainer.transform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:28796:14)
+      at async loadAndTransform (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:22669:26)
+      at async viteTransformMiddleware (file:///home/pranshu/global-shop/node_modules/vite/dist/node/chunks/config.js:24541:20)
+4:00:13 PM [vite] (client) hmr update /src/index.css, /src/App.tsx
+4:00:15 PM [vite] (client) hmr update /src/index.css, /src/features/customer/pages/CheckoutPage.tsx, /src/features/customer/pages/HistoryPage.tsx
+4:00:15 PM [vite] (client) Pre-transform error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10: ERROR: Unexpected "catch"
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10
+  
+  Unexpected "catch"
+  47 |              const result = await verifyFnCorrect({ orderId, paymentId });
+  48 |              return result.data;
+  49 |          } catch (error) {
+     |            ^
+  50 |              console.warn("Cloud Function failed (likely not deployed), falling back to client-side update for DEMO ON...
+  51 |  
+  
+4:00:15 PM [vite] Internal server error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10: ERROR: Unexpected "catch"
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10
+  
+  Unexpected "catch"
+  47 |              const result = await verifyFnCorrect({ orderId, paymentId });
+  48 |              return result.data;
+  49 |          } catch (error) {
+     |            ^
+  50 |              console.warn("Cloud Function failed (likely not deployed), falling back to client-side update for DEMO ON...
+  51 |  
+  
+      at failureErrorWithLog (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:1467:15)
+      at /home/pranshu/global-shop/node_modules/esbuild/lib/main.js:736:50
+      at responseCallbacks.<computed> (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:603:9)
+      at handleIncomingPacket (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:658:12)
+      at Socket.readFromStdout (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+4:00:15 PM [vite] (client) Pre-transform error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10: ERROR: Unexpected "catch"
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10
+  
+  Unexpected "catch"
+  47 |              const result = await verifyFnCorrect({ orderId, paymentId });
+  48 |              return result.data;
+  49 |          } catch (error) {
+     |            ^
+  50 |              console.warn("Cloud Function failed (likely not deployed), falling back to client-side update for DEMO ON...
+  51 |  
+  
+4:00:15 PM [vite] Internal server error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10: ERROR: Unexpected "catch"
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10
+  
+  Unexpected "catch"
+  47 |              const result = await verifyFnCorrect({ orderId, paymentId });
+  48 |              return result.data;
+  49 |          } catch (error) {
+     |            ^
+  50 |              console.warn("Cloud Function failed (likely not deployed), falling back to client-side update for DEMO ON...
+  51 |  
+  
+      at failureErrorWithLog (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:1467:15)
+      at /home/pranshu/global-shop/node_modules/esbuild/lib/main.js:736:50
+      at responseCallbacks.<computed> (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:603:9)
+      at handleIncomingPacket (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:658:12)
+      at Socket.readFromStdout (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+4:00:55 PM [vite] Internal server error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10: ERROR: Unexpected "catch"
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10
+  
+  Unexpected "catch"
+  47 |              const result = await verifyFnCorrect({ orderId, paymentId });
+  48 |              return result.data;
+  49 |          } catch (error) {
+     |            ^
+  50 |              console.warn("Cloud Function failed (likely not deployed), falling back to client-side update for DEMO ON...
+  51 |  
+  
+      at failureErrorWithLog (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:1467:15)
+      at /home/pranshu/global-shop/node_modules/esbuild/lib/main.js:736:50
+      at responseCallbacks.<computed> (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:603:9)
+      at handleIncomingPacket (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:658:12)
+      at Socket.readFromStdout (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+4:01:00 PM [vite] Internal server error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10: ERROR: Unexpected "catch"
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10
+  
+  Unexpected "catch"
+  47 |              const result = await verifyFnCorrect({ orderId, paymentId });
+  48 |              return result.data;
+  49 |          } catch (error) {
+     |            ^
+  50 |              console.warn("Cloud Function failed (likely not deployed), falling back to client-side update for DEMO ON...
+  51 |  
+  
+      at failureErrorWithLog (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:1467:15)
+      at /home/pranshu/global-shop/node_modules/esbuild/lib/main.js:736:50
+      at responseCallbacks.<computed> (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:603:9)
+      at handleIncomingPacket (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:658:12)
+      at Socket.readFromStdout (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+4:01:20 PM [vite] Internal server error: Transform failed with 1 error:
+/home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10: ERROR: Unexpected "catch"
+  Plugin: vite:esbuild
+  File: /home/pranshu/global-shop/src/features/orders/services/order.service.ts:49:10
+  
+  Unexpected "catch"
+  47 |              const result = await verifyFnCorrect({ orderId, paymentId });
+  48 |              return result.data;
+  49 |          } catch (error) {
+     |            ^
+  50 |              console.warn("Cloud Function failed (likely not deployed), falling back to client-side update for DEMO ON...
+  51 |  
+  
+      at failureErrorWithLog (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:1467:15)
+      at /home/pranshu/global-shop/node_modules/esbuild/lib/main.js:736:50
+      at responseCallbacks.<computed> (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:603:9)
+      at handleIncomingPacket (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:658:12)
+      at Socket.readFromStdout (/home/pranshu/global-shop/node_modules/esbuild/lib/main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+4:01:27 PM [vite] (client) hmr update /src/index.css, /src/features/customer/pages/CheckoutPage.tsx, /src/features/customer/pages/HistoryPage.tsx
+4:05:56 PM [vite] (client) hmr update /src/index.css, /src/features/customer/pages/CheckoutPage.tsx, /src/features/customer/pages/HistoryPage.tsx
+4:12:35 PM [vite] (client) hmr update /src/App.tsx, /src/index.css

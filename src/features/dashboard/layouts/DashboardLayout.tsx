@@ -10,13 +10,23 @@ interface DashboardLayoutProps {
 
 const DashboardLayout = ({ children, title }: DashboardLayoutProps) => {
     const { profile } = useAuth();
-    const [sidebarOpen, setSidebarOpen] = useState(true);
+    const [sidebarOpen, setSidebarOpen] = useState(false); // Default closed on mobile, LG override via CSS
     const role = profile?.role || "user";
 
     return (
-        <div className="min-h-screen bg-black flex">
+        <div className="min-h-screen bg-black flex relative">
             {/* Sidebar Component with RBAC logic internal to it */}
-            <Sidebar sidebarOpen={sidebarOpen} />
+            <div className={`fixed inset-y-0 left-0 z-50 transform ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:relative lg:translate-x-0 transition-transform duration-300 ease-in-out`}>
+                <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+            </div>
+
+            {/* Mobile Overlay */}
+            {sidebarOpen && (
+                <div
+                    className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+                    onClick={() => setSidebarOpen(false)}
+                ></div>
+            )}
 
             <div className="flex-1 flex flex-col h-screen overflow-hidden">
                 <header className="bg-[#1a1a1a] border-b border-gray-800 h-16 flex items-center justify-between px-6">
